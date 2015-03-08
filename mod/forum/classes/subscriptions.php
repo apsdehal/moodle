@@ -378,6 +378,7 @@ class subscriptions {
 
     /**
      * Returns a list of user objects who are subscribed to this forum.
+     * This function can return wrong results if there is a forum with 10 posts and subscribers who have opted out of subscribing to every discussion. So individual check on discussion subscriptions is a must
      *
      * @param stdClass $forum The forum record.
      * @param int $groupid The group id if restricting subscriptions to a group of users, or 0 for all.
