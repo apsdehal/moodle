@@ -328,7 +328,7 @@ class completion_info {
         if ($this->is_enabled() && !$PAGE->user_is_editing() && isloggedin() && !isguestuser()) {
             $result .= html_writer::tag('div', get_string('yourprogress','completion') .
                     $OUTPUT->help_icon('completionicons', 'completion'), array('id' => 'completionprogressid',
-                    'class' => 'completionprogress'));
+                    'class' => 'completionprogress moodle-has-zindex'));
         }
         return $result;
     }
